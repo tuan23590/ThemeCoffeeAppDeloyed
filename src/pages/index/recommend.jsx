@@ -35,6 +35,9 @@ const RecommendContent = () => {
                 <div onClick={open} className="space-y-3">
                   <Box
                     className="relative aspect-video rounded-lg bg-cover bg-center bg-skeleton"
+
+                    // check: style inline 
+
                     style={{ backgroundImage: `url(${product.image})` }}
                   >
                     {product.sale && (
@@ -77,6 +80,9 @@ const RecommendFallback = () => {
     <Section title="Gợi ý cho bạn" padding="title-only">
       <Swiper slidesPerView={1.25} spaceBetween={16} className="px-4">
         {recommendProducts.map((_, i) => (
+
+          // check: key={i}
+
           <SwiperSlide key={i}>
             <ProductSlideSkeleton />
           </SwiperSlide>

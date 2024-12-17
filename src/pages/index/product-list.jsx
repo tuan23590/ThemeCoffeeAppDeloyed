@@ -33,6 +33,9 @@ const ProductListFallback = () => {
     <Section title="Danh sách sản phẩm">
       <Box className="grid grid-cols-2 gap-4">
         {products.map((_, i) => (
+
+          // check: key={i}
+
           <ProductItemSkeleton key={i} />
         ))}
       </Box>

@@ -65,6 +65,9 @@ const SearchResultFallback = () => {
       </Text.Title>
       <Box className="p-4 pt-0 space-y-4 flex-1 overflow-y-auto">
         {result.map((_, i) => (
+
+          // check: key={i}
+
           <ProductSearchResultSkeleton key={i} />
         ))}
       </Box>

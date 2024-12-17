@@ -40,6 +40,9 @@ const CartPreview = () => {
         type="highlight"
         disabled={!quantity}
         fullWidth
+
+        // check: logic inline
+
         onClick={() => pay(totalPrice)}
       >
         Đặt hàng

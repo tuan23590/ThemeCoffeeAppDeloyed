@@ -20,6 +20,9 @@ const Categories = () => {
     <Box className="bg-white grid grid-cols-4 gap-4 p-4">
       {categories.map((category, i) => (
         <div
+
+          // check: key={i}
+
           key={i}
           onClick={() => gotoCategory(category.id)}
           className="flex flex-col space-y-2 items-center"

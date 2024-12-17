@@ -13,6 +13,9 @@ const Welcome = () => {
         <Box flex alignItems="center" className="space-x-2">
           <img
             className="w-8 h-8 rounded-lg border-inset"
+
+            // check: logic inline
+
             src={getConfig((c) => c.template.headerLogo) || logo}
             alt="App Logo"
           />

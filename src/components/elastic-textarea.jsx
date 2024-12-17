@@ -26,6 +26,9 @@ const ElasticTextarea = ({ onChange, maxRows, ...props }) => {
   return (
     <textarea
       {...props}
+
+      // check: style inline
+
       style={{
         height: "auto",
         paddingTop: 0,
@@ -33,6 +36,9 @@ const ElasticTextarea = ({ onChange, maxRows, ...props }) => {
         resize: "none",
       }}
       ref={ref}
+
+      // check: logic inline
+
       onChange={(e) => {
         if (onChange) {
           onChange(e);

@@ -26,6 +26,9 @@ const MultipleOptionPicker = ({ product, variant, value, onChange }) => {
         }))}
         value={value}
         defaultValue={value}
+
+        // check: duplicate onChange
+
         onChange={(selectedOptions) => {
           onChange(selectedOptions);
         }}

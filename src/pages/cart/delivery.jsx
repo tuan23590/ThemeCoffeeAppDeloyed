@@ -51,6 +51,9 @@ const Delivery = () => {
                   className="border-none px-0 w-full focus:outline-none"
                   maxRows={4}
                   value={note}
+
+                  // check: logic inline
+
                   onChange={(e) => setNote(e.currentTarget.value)}
                 />
               </Box>

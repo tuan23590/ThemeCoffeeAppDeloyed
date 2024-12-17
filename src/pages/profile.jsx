@@ -10,6 +10,9 @@ const Subscription = () => {
     <Box className="m-4" onClick={onClick}>
       <Box
         className="bg-green text-white rounded-xl p-4 space-y-2"
+
+        // check: style inline 
+
         style={{
           backgroundImage: `url(${subscriptionDecor})`,
           backgroundPosition: "right 8px center",

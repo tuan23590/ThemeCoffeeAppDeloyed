@@ -9,11 +9,17 @@ const SingleOptionPicker = ({ variant, value, onChange }) => {
       <Radio.Group
         className="flex-1 grid grid-cols-3 justify-between"
         name={variant.id}
+
+        // check: logic inline
+
         options={variant.options.map((option) => ({
           value: option.id,
           label: option.label,
         }))}
         value={value}
+
+        // check: duplicate onChange
+
         onChange={(selectedOption) => {
           onChange(selectedOption);
         }}

@@ -62,6 +62,9 @@ const TimePicker = () => {
       title="Thời gian nhận hàng"
       value={{
         date,
+
+        // check: logic inline
+
         time: availableTimes.find((t) => +t === time) ? time : +availableTimes[0],
       }}
       formatPickedValueDisplay={({ date, time }) =>

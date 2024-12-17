@@ -132,6 +132,7 @@ const ProductPicker = ({ children, product, selected }) => {
                         variant={variant}
                         value={options[variant.id]}
                         onChange={(selectedOption) =>
+                          // check: use spread operator (...)
                           setOptions((prevOptions) => ({
                             ...prevOptions,
                             [variant.id]: selectedOption,
@@ -145,6 +146,7 @@ const ProductPicker = ({ children, product, selected }) => {
                         variant={variant}
                         value={options[variant.id]}
                         onChange={(selectedOption) =>
+                          // check: use spread operator (...)
                           setOptions((prevOptions) => ({
                             ...prevOptions,
                             [variant.id]: selectedOption,

@@ -18,6 +18,9 @@ const Banner = () => {
         {[1, 2, 3, 4, 5]
           .map((i) => banner[i-1])
           .map((banner, i) => (
+
+            // check: key={i}
+
             <Swiper.Slide key={i} className="px-4">
               <Box
                 className="w-full rounded-lg aspect-[2/1] bg-cover bg-center bg-skeleton"
