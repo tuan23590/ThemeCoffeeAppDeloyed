@@ -1,3 +1,4 @@
+import React from "react";
 import appConfig from "../../app-config.json";
 
 export function getConfig(getter) {

@@ -1,4 +1,5 @@
 import { configAppView } from "zmp-sdk";
+import React from "react";
 
 export function matchStatusBarColor(visible) {
   if (visible) {

@@ -6,6 +6,7 @@ import { ProductSearchResultSkeleton } from "../../components/skeletons";
 import { mergeData, useFilteredProducts } from "../../hooks/hooks";
 import { useProducts } from "../../store/productStore";
 import { useVariants } from "../../store/variantStore";
+import React from "react";
 
 const SearchResultContent = () => {
   

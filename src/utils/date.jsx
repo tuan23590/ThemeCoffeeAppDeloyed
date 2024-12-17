@@ -1,3 +1,5 @@
+import React from "react";
+
 export function areSameDay(date1, date2) {
   return (
     date1.getFullYear() === date2.getFullYear() &&

@@ -1,5 +1,6 @@
 import { createOrder } from "zmp-sdk";
 import { getConfig } from "./config";
+import React from "react";
 
 export function calcFinalPrice(product, options) {
   let finalPrice = product.price;

@@ -1,6 +1,7 @@
 import { Header, Page } from "zmp-ui";
 import Inquiry from "./inquiry";
 import SearchResult from "./result";
+import React from "react";
 
 const SearchPage = () => {
   return (

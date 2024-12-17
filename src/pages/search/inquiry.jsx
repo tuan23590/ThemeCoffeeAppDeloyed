@@ -1,14 +1,16 @@
 import { useCallback } from "react";
 import { Box, Input } from "zmp-ui";
 import { useProducts } from "../../store/productStore";
+import React from "react";
+
 const Inquiry = () => {
-  const [keyword, setKeyword] = useProducts.keyword();
+  const [keywords, setKeywords] = useProducts.keyword();
 
   const handleChange = useCallback(
     (keyword) => {
-      setKeyword(keyword)
+      setKeywords(keyword)
     },
-    [setKeyword]
+    [setKeywords]
   );
 
   return (
@@ -32,7 +34,7 @@ const Inquiry = () => {
             el?.focus();
           }
         }}
-        defaultValue={keyword}
+        defaultValue={keywords}
         onChange={(e) => handleChange(e.target.value)}
         placeholder="Tìm nhanh đồ uống, món mới ..."
         clearable
